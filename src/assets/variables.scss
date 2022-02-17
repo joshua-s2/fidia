@@ -1,0 +1,220 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+// Globals Styles
+
+$body-font-family: "Inter", sans-serif;
+.v-application {
+  font-family: "Inter", sans-serif !important;
+}
+$heading-font-family: "Inter", sans-serif;
+$font-size-root: 16px;
+$border-radius-root: 0.25em !default;
+
+// Button
+$btn-font-weight: 700;
+$btn-text-transform: capitalize;
+$btn-border-radius: 8px !default;
+
+// Form
+// Text Field
+$text-field-border-radius: 8px;
+$text-field-filled-border-radius: 8px !default;
+
+// Colors
+// primary
+$primary: var(--v-primary-base);
+$primary-lighten-5: var(--v-primary-lighten5);
+$primary-darken-4: var(--v-primary-darken4);
+
+// secondary
+$secondary: var(--v-secondary-base);
+$secondary-lighten-5: var(--v-secondary-lighten5);
+$secondary-darken-4: var(--v-secondary-darken4);
+
+// warning
+$warning: var(--v-warning-base);
+$warning-lighten-5: var(--v-warning-lighten5);
+$warning-darken-4: var(--v-warning-darken4);
+
+// error
+$error: var(--v-error-base);
+$error-lighten-5: var(--v-error-lighten5);
+$error-darken-4: var(--v-error-darken4);
+
+// accent
+$accent: var(--v-accent-base);
+$accent-lighten-5: var(--v-accent-lighten5);
+$accent-darken-4: var(--v-accent-darken4);
+
+// success
+$success: var(--v-success-base);
+$success-lighten-5: var(--v-success-lighten5);
+$success-darken-4: var(--v-success-darken4);
+
+// light neutral
+$light-neutral: var(--v-lightNeutral-base);
+$light-neutral-lighten-1: var(--v-lightNeutral-lighten1);
+$light-neutral-lighten-2: var(--v-lightNeutral-lighten2);
+$light-neutral-lighten-3: var(--v-lightNeutral-lighten2);
+$light-neutral-lighten-4: var(--v-lightNeutral-lighten4);
+$light-neutral-lighten-5: var(--v-lightNeutral-lighten5);
+$light-neutral-darken-1: var(--v-lightNeutral-darken1);
+$light-neutral-darken-2: var(--v-lightNeutral-darken2);
+$light-neutral-darken-3: var(--v-lightNeutral-darken3);
+$light-neutral-darken-4: var(--v-lightNeutral-darken4);
+
+// dark neutral
+$dark-neutral: var(--v-darkNeutral-base);
+$dark-neutral-lighten-1: var(--v-darkNeutral-lighten1);
+$dark-neutral-lighten-2: var(--v-darkNeutral-lighten2);
+$dark-neutral-lighten-3: var(--v-darkNeutral-lighten3);
+$dark-neutral-lighten-4: var(--v-darkNeutral-lighten4);
+$dark-neutral-lighten-5: var(--v-darkNeutral-lighten5);
+$dark-neutral-darken-1: var(--v-darkNeutral-darken1);
+$dark-neutral-darken-2: var(--v-darkNeutral-darken2);
+$dark-neutral-darken-3: var(--v-darkNeutral-darken3);
+$dark-neutral-darken-4: var(--v-darkNeutral-darken4);
+
+// Light theme
+$material-light: (
+  "background": $light-neutral,
+  "app-bar": $light-neutral,
+  "text": (
+    "theme": $dark-neutral-darken-4,
+    "primary": $dark-neutral,
+    "secondary": $dark-neutral-lighten-2,
+    "disabled": $dark-neutral-lighten-5,
+    "link": $primary,
+    "link-hover": $primary-darken-4,
+  ),
+  "buttons": (
+    "disabled": $dark-neutral-lighten-3,
+    "focused": $dark-neutral-lighten-5,
+    "focused-alt": $dark-neutral-lighten-1,
+    "pressed": $dark-neutral-darken-2,
+  ),
+);
+
+// Dark theme
+$material-dark: (
+  "background": $dark-neutral-darken-4,
+  "app-bar": $dark-neutral,
+  "text": (
+    "theme": $light-neutral,
+    "primary": $light-neutral-lighten-5,
+    "secondary": $light-neutral,
+    "disabled": $light-neutral-darken-4,
+    "link": $primary,
+    "link-hover": $primary-lighten-5,
+  ),
+  "buttons": (
+    "disabled": $dark-neutral-lighten-3,
+    "focused": $dark-neutral-lighten-5,
+    "focused-alt": $dark-neutral-lighten-1,
+    "pressed": $dark-neutral-darken-2,
+  ),
+);
+
+// Typography
+
+$headings: (
+  "h1": (
+    //64px
+    "size": 4rem,
+    "weight": 800,
+    "line-height": 1.25em,
+  ),
+  "h2": (
+    //36px
+    "size": 2.25em,
+    "weight": 700,
+    "line-height": 1.25em,
+  ),
+  "h3": (
+    //30px
+    "size": 1.875em,
+    "weight": 500,
+    "line-height": 2.375em,
+  ),
+  "h4": (
+    //24px
+    "size": 1.5rem,
+    "weight": 500,
+    "line-height": 2em,
+  ),
+  "h5": (
+    //21px
+    "size": 1.3rem,
+    "weight": 700,
+    "line-height": 1.25em,
+  ),
+  "h6": (
+    //18px
+    "size": 1.125rem,
+    "weight": 700,
+    "line-height": 1.25em,
+  ),
+  "subtitle-1": (
+    // 16px
+    "size": 1rem,
+    "weight": 600,
+    "line-height": 1.5em,
+  ),
+  "subtitle-2": (
+    // 14px
+    "size": 0.875rem,
+    "weight": 600,
+    "line-height": 1.7em,
+  ),
+  "body-1": (
+    // 16px
+    "size": 1rem,
+    "weight": 400,
+    "line-height": 1.5rem,
+  ),
+  "body-2": (
+    // 14px
+    "size": 0.875rem,
+    "weight": 400,
+    "line-height": 1.7em,
+  ),
+  "button": (
+    "size": 0.875rem,
+    "weight": 600,
+    "line-height": 1.7em,
+  ),
+  "caption": (
+    // 12px
+    "size": 0.75rem,
+    "weight": 400,
+    "line-height": 1.125rem,
+  ),
+  "overline": (
+    //10px
+    "size": 0.625rem,
+    "weight": 400,
+    "line-height": 1.6rem,
+  ),
+);
+
+$rounded: (
+  "sm": $border-radius-root,
+  "lg": $border-radius-root * 4,
+);
+
+// global utils
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+input:-internal-autofill-selected {
+  transition: background-color 5000s; // make autofill background color transparent
+}
