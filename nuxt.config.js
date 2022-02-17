@@ -19,14 +19,14 @@ import {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-  buildDir: "dist",
+
   generate: {
     routes: ["/"],
     dir: "public",
   },
-  // Target: https://go.nuxtjs.dev/config-target
+  buildDir: "dist",
   target: "static",
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
