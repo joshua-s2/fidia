@@ -20,14 +20,6 @@ import {
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
 
-  generate: {
-    routes: ["/"],
-    dir: "public",
-  },
-  buildDir: "dist",
-  target: "static",
-  ssr: false,
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - fidia",
@@ -69,7 +61,13 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
   ],
-
+  generate: {
+    routes: ["/"],
+    dir: "public",
+  },
+  buildDir: "dist",
+  target: "static",
+  ssr: false,
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
@@ -103,5 +101,18 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend: (config) => {
+      const svgRule = config.module.rules.find((rule) =>
+        rule.test.test(".svg")
+      );
+
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/;
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ["vue-loader", "vue-svg-loader"],
+      });
+    },
+  },
 };
