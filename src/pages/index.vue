@@ -30,7 +30,7 @@
 <script>
 import Header from "~/components/Header.vue";
 import CardsActivity from "~/components/Cards/Activity.vue";
-import TableUsers from "/components/Table/Users.vue";
+import TableUsers from "~/components/Table/Users.vue";
 export default {
   name: "IndexPage",
   data() {
