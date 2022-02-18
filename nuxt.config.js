@@ -19,7 +19,9 @@ import {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-
+  buildDir: "dist",
+  target: "static",
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - fidia",
@@ -46,7 +48,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: "~/assets/main.scss", lang: "scss" }],
-
+  genetate: {
+    routes: ["/pages/"],
+  },
   // set src as default
   srcDir: "src/",
 
@@ -61,13 +65,7 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
   ],
-  generate: {
-    routes: ["/"],
-    dir: "public",
-  },
-  buildDir: "dist",
-  target: "static",
-  ssr: false,
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
