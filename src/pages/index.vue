@@ -18,7 +18,7 @@
           v-model="search"
           prepend-icon="mdi-magnify"
           label="Search"
-          class="secondary--text text"
+          class="secondary--text"
           hide-details
         ></v-text-field>
       </v-col>
