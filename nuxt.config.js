@@ -19,7 +19,6 @@ import {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  buildDir: "dist",
   target: "static",
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -48,9 +47,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [{ src: "~/assets/main.scss", lang: "scss" }],
-  genetate: {
-    routes: ["/pages/"],
-  },
+
   // set src as default
   srcDir: "src/",
 
